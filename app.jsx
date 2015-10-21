@@ -14,20 +14,20 @@ App = React.createClass({
 
   renderFormulas() {
     return this.getFormulas()
-      .map((task) => {
-        return <Task key={task._id} task={task}/>;
+      .map((formula) => {
+        return <Formula key={formula._id} formula={formula}/>;
       });
   },
 
   render() {
     return (
       <div className="container">
-        <header>
-          <h1>Formula Editor</h1>
-        </header>
         <ul>
           {this.renderFormulas()}
         </ul>
+        <header>
+          <h1>Formula Editor</h1>
+        </header>
       </div>
     );
   }

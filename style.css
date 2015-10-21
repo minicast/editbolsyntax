@@ -1,5 +1,26 @@
 /* CSS declarations go here */
-body {
+
+@media (min-width: 768px) {
+  .container {
+  }
+}
+.container {
+  width: auto;
+  margin: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  min-height: 100%;
+}
+
+.panel-body {
+  padding: 0;
+}
+
+.col-xs-4, col-sm-4, col-md-4 {
+  padding: 1px;
+}
+
+/*body {
   font-family: sans-serif;
   background-color: #315481;
   background-image: linear-gradient(to bottom, #315481, #918e82 100%);
@@ -123,4 +144,4 @@ header .hide-completed {
   .new-task input {
     padding-bottom: 5px;
   }
-}
+}*/
